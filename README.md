@@ -1,1 +1,1 @@
-https://rolling-scopes-school.github.io/sashalitvit-JSFE2022Q/online-zoo/pages/main/
+https://rolling-scopes-school.github.io/sashalitvit-JSFE2022Q/online-zoo/pages/main
