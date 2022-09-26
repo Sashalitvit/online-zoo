@@ -1,1 +1,1 @@
-https://rolling-scopes-school.github.io/Sashalitvit/online-zoo/
+https://github.com/Sashalitvit/online-zoo
