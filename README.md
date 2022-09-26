@@ -1,1 +1,1 @@
-https://github.com/sashalitvit-JSFE2022Q/online-zoo/pages/main/index.html
+https://github.com/Sashalitvit/online-zoo/pages/main/index.html
