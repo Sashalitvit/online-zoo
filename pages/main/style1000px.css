@@ -1,0 +1,159 @@
+
+@media(min-width:1000px) and (max-width:1559px){
+
+
+    .container-header{
+      display: flex;
+      justify-content: space-around;
+    }
+     .giant-panda{
+        max-width: 1000px;
+        width: 100%;
+        height: 584px;
+        background: url(../../assets/images/Giant-Panda-1000px.jpg);
+     }
+     /* /////////// */
+     .watch-online{
+      /* max-width: 367px; */
+      width: 100%;
+      /* max-height: 367px; */
+      height: 100%;
+      margin: 0px;
+      display: block;
+
+    }
+
+    .btn-watch-online{
+        width: 298px;
+        height: 54px;
+        margin-left: 500px;
+    }
+    .favorite-animals{
+        width: 400.25px;
+        height: 320px;
+        font-size: 85px;
+        line-height: 75%;
+        margin-top: 42.6px;
+        margin-left: 514px;
+
+    }
+    .favorite-animals::before{
+      width: 367px;
+      height: 367px;
+      top: -15px;
+
+    }
+    /* \\\\\\\\\\\\\\ */
+
+    /*section2*/
+      .old-man{
+        max-width: 1000px;
+        width: 100%;
+        margin: auto;
+
+      }
+    .pic-old-man{
+         background: url(../../assets/images/bamboo-cap1000px.jpg);
+         width: 455px;
+         height: 408px;
+
+    }
+
+   .flower{
+    display: none;
+   }
+
+
+   /*section3*/
+
+   .pointer-left-1000px{
+    display: block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #FFFFFF center;
+    border: 0.3px solid #FFFFFF;
+    transform: rotate(-180deg);
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%) center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   .pointer-right-1000px{
+    display: block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #FFFFFF center;
+    border: 0.3px solid #FFFFFF;
+    transform: rotate(-180deg);
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%) center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pointer-left{
+  display: none;
+}
+.pointer-right{
+  display: none;
+}
+.cont-point{
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slider{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+}
+#animals{
+  width: 294px;
+  height:354px;
+}
+.cont-point{
+  flex-basis: 100%;
+}
+/*section4*/
+
+.section4{
+  width: 100%;
+  height: 100%;
+  width: 1000px;
+  height: 876px;
+}
+.cont-section4{
+  width: 940px;
+  height: 796px;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+   /*section5*/
+   /* .guest4{
+    display: none;
+   } */
+   .cont-section4{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+   }
+   .guest4{
+    display: none;
+   }
+   .container-reviews{
+    max-width: 1000px;
+    width:100%;
+   }
+   .cont-testimonials{
+    column-gap: 66px;
+   }
+}
+
+
+

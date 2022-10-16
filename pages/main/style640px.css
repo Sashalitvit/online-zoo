@@ -1,0 +1,519 @@
+
+.container-burger{
+    width: 640px;
+    height: 329px;
+    display: none;
+    background: #FFFFFF;
+}
+.logo-bg{
+    width: 82px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    position: relative;
+}
+.logo-text-bg{
+    border-radius: 2px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.logo-bambo-bg{
+    background-image: url(../../assets/images/bamboo.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 12.03px;
+    height: 22.98px;
+    left: 8.23px;
+    top: 20.64px;
+}
+
+
+
+/*popover*/
+   .container-reviews{
+    position: relative;
+   }
+   .popover{
+    width: 320px;
+    height: 428px;
+    display: none;
+    background: #FFFFFF;
+
+   }
+   .x-icon{
+    width: 14px;
+    height: 14px;
+    background: url(../../assets/icons/x_icon.png);
+   }
+   .michail-pop{
+    width: 267px;
+    height: 391px;
+    background: url(../../assets/images/Testimonials/michail-pop.jpg);
+    border-radius: 20px;
+   }
+
+
+@media(max-width:999px){
+/*burger*/
+    main{
+        overflow: hidden;
+        margin: auto;
+    }
+    .header-destop{
+        height: 52px;
+    }
+    .container-header{
+        position: relative;
+        justify-content: space-between;
+
+    }
+    .container-burger{
+        display: block;
+        position: fixed;
+       /* border: 2px solid red;*/
+        right: 0%;
+        z-index: 15;
+        transition: all 0.8s;
+        opacity: 0;
+        background: #FFFFFF;
+    }
+    .logo-bg{
+        width: 82px;
+        height: 52px;
+        border: 1px solid #FFFFFF;
+        text-align: center;
+        position: relative;
+    }
+    .logo-text-bg{
+        border-radius: 2px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19.0145px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .logo-bambo-bg{
+        background-image: url(../../assets/images/bamboo.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 12.03px;
+        height: 22.98px;
+        left: 8.23px;
+        top: 20.64px;
+    }
+    .nav-bg{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+   .nav-list-bg{
+    width: 365px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+
+    }
+    .nav-list-bg{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+
+    }
+
+    .container-header nav,
+    .container-header > a{
+        display: none;
+    }
+
+    /* button-burger */
+    .btn-burger{
+        width:18px;
+        height: 10px;
+        margin-right: 13px;
+    }
+    #burger{
+        display:none;
+    }
+    label[for='burger']{
+        width: 18px;
+        height: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        position: relative;
+        z-index: 16;
+    }
+    label[for='burger'] span{
+        width: 18px;
+        height: 2px;
+        background: #FFFFFF;
+        border-radius: 2px;
+        transition: ease 0.5s;
+
+    }
+    /* анимация кноаки */
+    #burger:checked ~ label span:nth-child(2){
+        display: none;
+    }
+    #burger:checked ~ label span:nth-child(1){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) rotateZ(45deg);
+        transition: ease 0.5s;
+    }
+    #burger:checked ~ label span:nth-child(3){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) rotateZ(-45deg);
+        transition: ease 0.5s;
+    }
+    .open{
+        display: flex;
+        background: #bec73b;
+        transform: translateX(-100%);
+        opacity: 1;
+        transition: all ease 0.8s;
+    }
+    .favorite-animals,
+    .favorite-animals::before{
+        transition: 0.4s;
+    }
+    .invisible{
+        opacity: 0;
+        transition: ease 0.4s;
+    }
+
+      /* стилизация бургер нав*/
+      .container-burger nav{
+        display: block;
+      }
+    .nav-item-bur{
+        width: 104px;
+        height: 22px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #333B41;
+        cursor: pointer;
+        list-style-type: none;
+        margin-top: 15px;
+
+    }
+    .nav-list-bur{
+        width: 110px;
+        height: 206px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 66px;
+
+
+
+    }
+
+
+/*burger*/
+   /* .container-header{
+        display: none;
+    }*/
+
+    .giant-panda{
+       width: 640px;
+       height: 373px;
+       background: url(../../assets/images/Giant-Panda-tablet.jpg);
+       background-repeat: no-repeat;
+    }
+    .watch-online{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        display: block;
+
+      }
+      .favorite-animals{
+        width:255.64px;
+        height: 204.38px;
+        font-size: 54.2894px;
+        line-height: 75%;
+       /* margin-top: 42.6px;*/
+        margin-left: 399px;
+
+    }
+    .favorite-animals::before{
+        width: 237.6px;
+        height: 237.6px;
+        top: -15px;
+
+
+      }
+      .btn-watch-online{
+        margin-top: 0;
+      }
+
+
+
+
+
+  /*section2*/
+    .pic-old-man{
+        display: none;
+        margin: 0;
+    }
+    .flower{
+        width: 115px;
+        height: 471px;
+        background: url(../../assets/images/flower_foto1-tablet.jpg);
+        margin-top: 120px;
+    }
+
+    /*section3*/
+
+    #animals{
+        width: 294px;
+        height: 354px;
+    }
+    .anim1{
+        background: url(../../assets/images/animals/sl-small-panda.jpg);
+    }
+    .anim2{
+        background: url(../../assets/images/animals/sl-small-eagle.jpg);
+    }
+    .anim3{
+        background: url(../../assets/images/animals/sl-small-leo.jpg);
+    }
+   .anim4{
+    background: url(../../assets/images/animals/sl-small-gorillas.jpg);
+   }
+   .anim5{
+     background: url(../../assets/images/animals/sl-small-alligator.jpg);
+   }
+   .anim6{
+    background: url(../../assets/images/animals/sl-small-penguan.jpg);
+   }
+
+
+   /*section3*/
+   .pointer-left-1000px{
+    display: block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #FFFFFF center;
+    border: 0.3px solid #FFFFFF;
+    transform: rotate(-180deg);
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%) center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   .pointer-right-1000px{
+    display: block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #FFFFFF center;
+    border: 0.3px solid #FFFFFF;
+    transform: rotate(-180deg);
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%) center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pointer-left{
+  display: none;
+}
+.pointer-right{
+  display: none;
+}
+.cont-point{
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.anim3{
+    display: none;
+}
+.anim4{
+    display: none;
+}
+.cont-slider{
+    width: 640px;
+    height: 756px;
+}
+.btn-choouse{
+    margin-top: 50px;
+    margin-left: 150px;
+
+
+}
+
+
+/*section4*/
+
+
+.section4{
+    width: 600px;
+    height: 671px;
+    padding: 0;
+}
+.pick-and{
+    width: 405px;
+    height: 50px;
+}
+.we-know{
+    width: 600px;
+    height: 52px;
+}
+.during{
+    width: 600px;
+    height: 42px;
+}
+.event-though{
+    width: 600px;
+    height: 42px;
+}
+.container-payy{
+    width: 592px;
+    height: 244px;
+}
+.pointer1{
+    background: none;
+    position: relative;
+}
+.pointer1::before{
+    content: '';
+    width: 95px;
+    height: 63px;
+    position: absolute;
+    background-image: url(../../assets/icons/circle-arrow.svg);
+    background-repeat: no-repeat;
+    z-index: 5;
+    top: -20px;
+}
+
+
+/*section5*/
+    .section5{
+        width: 640px;
+        height: 660px;
+        position: relative;
+    }
+    .container-reviews{
+         width: 600px;
+         height: 387px;
+  }
+    .guest1{
+        width: 600px;
+        height: 109px;
+        background: url(../../assets/images/Testimonials/michael-tablet.jpg);
+    }
+    .guest2{
+        width: 600px;
+        height: 109px;
+        background: url(../../assets/images/Testimonials/oscar-tablet.jpg);
+    }.guest3{
+        width: 600px;
+        height: 109px;
+        background: url(../../assets/images/Testimonials/frederica-tablet.jpg);
+    }
+    .btn-leave{
+        display:block;
+        margin:  60px auto 0px;
+    }
+    .guest4{
+        display: none;
+       }
+    .Testimonials{
+        margin-top: 200px;
+    }
+    .cont-testimonials{
+        display: flex;
+        flex-direction: column;
+    }
+    .openMod{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(125, 126, 113, 0.8);
+        z-index: 10;
+        transition: all ease 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+    }
+    .cross{
+        position: absolute;
+        top: 5%;
+        right: 7%;
+        width: 6vw;
+        height:6vw;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 25%;
+        z-index: 11;
+        background-color: red;
+        background-image: url(../../assets/images/cross_icon-icons.com_72347.svg);
+        background-position: center;
+        background-size: auto;
+        cursor: pointer;
+    }
+    .invis{
+        opacity: 0.5;
+        transition: ease 0.6s;
+    }
+    .guestCard{
+        width: 70%;
+        height: 80%;
+        border-radius: 15%;
+        padding: 10px;
+        border: 4px solid #ffff;
+        transition: all ease 0.4s;
+        /* background-image: url(../../assets/images/Testimonials/frederika.jpg); */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-color: antiquewhite;
+
+    }
+    .scrollStop{
+        position: fixed;
+        width: 100%;
+        top:-2875px;
+        overflow: hidden;
+    }
+
+    .cont-input-range{
+        display: none;
+       }
+/*POP UP*/
+    .popover{
+        width: 320px;
+        height: 428px;
+        display: block;
+        background: #FFFFFF;
+
+    }
+}

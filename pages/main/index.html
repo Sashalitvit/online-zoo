@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petstory</title>
-    <link rel="stylesheet" href="/pages/main/style.css">
-    <link rel="shortcut icon" href="/assets/icons/fav-panda.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../main/style.css">
+    <link rel="stylesheet" href="../main/style1000px.css">
+    <link rel="stylesheet" href="../main/style640px.css">
+    <link rel="stylesheet" href="../main/style320px.css">
+    <link rel="shortcut icon" href="../../assets/icons/fav-panda.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap" rel="stylesheet">
@@ -17,6 +20,11 @@
 
 
     <main>
+
+
+
+
+
 
 
         <section class="section1">
@@ -32,10 +40,37 @@
                           <li class="nav-item"><a href="#about">About</a></li>
                           <li class="nav-item"><a href="#map">Map</a></li>
                           <li class="nav-item"><a href="#zoos">Zoos</a></li>
-                          <li class="nav-item"><a href="#donate">Donate</a></li>
+                          <li class="nav-item"><a href="../donate/index.html">Donate</a></li>
                           <li class="nav-item"><a href="#contact">Contact us</a></li>
                     </nav>
-                    <h3 class="designed">Designed by ©</h3>
+                    <a class="designed" href="https://www.figma.com">Designed by ©</a>
+     <!--burger-menu-->
+     <!-- button-burger -->
+     <div class="btn-burger">
+        <input type="checkbox" id="burger">
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        </div>
+        <div class="container-burger">
+    <div class="logo-bg">
+        <p class="logo-text-bg">PetStory online</p>
+        <div class="logo-bambo-bg"></div>
+    </div>
+    <nav class="nav">
+        <ul class="nav-list-bur">
+          <li class="nav-item-bur"><a href="#about">About</a></li>
+          <li class="nav-item-bur"><a href="#map">Map</a></li>
+          <li class="nav-item-bur"><a href="#zoos">Zoos</a></li>
+          <li class="nav-item-bur"><a href="/sashalitvit-JSFE2022Q3/pages/donate/index.html">Donate</a></li>
+          <li class="nav-item-bur"><a href="#contact">Contact us</a></li>
+          <li class="nav-item-bur"><a class="designed-bg" href="https://www.figma.com">Designed by ©</a>
+          </li>
+        </nav>
+        </div>
+<!--burger-menu-->
                 </div>
             </header>
             <div class="watch-online">
@@ -69,12 +104,20 @@
             <div class="cont-slider">
             <div class="pointer-left">&rarr;</div>
             <div class="slider">
-                    <img src="/assets/images/animals/slider-panda.jpg" id="animals" alt="panda">
-                    <img src="/assets/images/animals/eagles.jpg" id="animals" alt="eagles">
-                    <img src="/assets/images/animals/gorillas.jpg" id="animals" alt="gorillas">
-                    <img src="/assets/images/animals/lazybones.jpg" id="animals" alt="lazybones">
-                    <img src="/assets/images/animals/leo.jpg" id="animals" alt="leo">
-                    <img src="/assets/images/animals/penguin.jpg" id="animals" alt="penguin">
+                <div class="fotos-slider1">
+                    <img class="anim1 animal" src="../../assets/images/animals/slider-panda.jpg" id="animals" alt="panda">
+                    <img class="anim2 animal" src="../../assets/images/animals/eagles.jpg" id="animals" alt="eagles">
+                    <img class="anim3 animal" src="../../assets/images/animals/gorillas.jpg" id="animals" alt="gorillas">
+                </div>
+                   <div class="cont-point">
+                    <div class="pointer-left-1000px">&rarr;</div>
+                    <div class="pointer-right-1000px">&larr;</div>
+                   </div>
+                <div class="fotos-slider2">
+                    <img class="anim4 animal" src="../../assets/images/animals/lazybones.jpg" id="animals" alt="lazybones">
+                    <img class="anim5 animal" src="../../assets/images/animals/leo.jpg" id="animals" alt="leo">
+                    <img class="anim6 animal" src="../../assets/images/animals/penguin.jpg" id="animals" alt="penguin">
+                </div>
             </div>
             <div class="pointer-right">&larr;</div>
             </div>
@@ -120,14 +163,31 @@
         <div class="container-reviews">
             <h3 class="Testimonials">Testimonials</h3>
             <div class="cont-testimonials">
-                <div class="guest1"></div>
-                <div class="guest2"></div>
-                <div class="guest3"></div>
-                <div class="guest4"></div>
+                <div class="guest1 guest"></div>
+                <div class="guest2 guest"></div>
+                <div class="guest3 guest"></div>
+                <div class="guest4 guest"></div>
+                <div class="guest1 guest"></div>
+                <div class="guest2 guest"></div>
+                <div class="guest3 guest"></div>
+                <div class="guest4 guest"></div>
+                <div class="guest1 guest"></div>
+                <div class="guest2 guest"></div>
+                <div class="guest3 guest"></div>
+                <div class="guest4 guest"></div>
             </div>
+         <div class="cont-input-range">
+         <input type="range" min="0" max="68.9" step="0.5" value="0" id="range1">
+
         </div>
+        </div>
+
+
+
+
         <button class="btn-leave">LEAVE FEEDBACK</button>
         </section>
+
 
 
 
@@ -136,33 +196,35 @@
 
     <footer class="footer">
         <div class="row-1">
+            <form action="../main/index.html">
             <div class="block-logo">
+
                 <div class="logo1">
                     <div class="logo-img1"></div>
                     <h2 class="logo-title1">PetStory online</h2>
                 </div>
-            </div>
+            </div></form>
             <div class="enter-mail">
                 <p class="subscribe">Subscribe to our news</p>
                 <input type="text" id="name" placeholder="Enter your email">
                 <button class="submit">Submit</button>
               </div>
         </div>
-
-     <button class="donate-btn">DONATE FOR VOLUNTEERS</button>
+      <form action="../donate/index.html">
+     <button class="donate-btn">DONATE FOR VOLUNTEERS</button></form>
      <div class="container-foot-down">
     <div class="cont-social">
         <ul class="soc-networks">
-            <li class="facebook"><a href="https://www.facebook.com/"><img src="/assets/images/facebook.png" alt="facebook"></a></li>
-            <li class="twitter"><a href="https://twitter.com/"><img src="/assets/images/twitter.png" alt="twitter"></a></li>
-            <li class="instagram"><a href="https://instagram.com/"><img src="/assets/images/instagram.png" alt="instagram"></a></li>
-            <li class="youtube"><a href="https://www.youtube.com/"><img src="/assets/images/youtube.png" alt="youtube"></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/"><img src="../../assets/images/facebook.png" alt="facebook"></a></li>
+            <li class="twitter"><a href="https://twitter.com/"><img src="../../assets/images/twitter.png" alt="twitter"></a></li>
+            <li class="instagram"><a href="https://instagram.com/"><img src="../../assets/images/instagram.png" alt="instagram"></a></li>
+            <li class="youtube"><a href="https://www.youtube.com/"><img src="../../assets/images/youtube.png" alt="youtube"></a></li>
         </ul>
 
      </div>
      <nav class="nav-foot">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="../main/index.html">About</a></li>
           <li class="nav-item"><a href="#map">Map</a></li>
           <li class="nav-item"><a href="#zoos">Zoos</a></li>
           <li class="nav-item"><a href="#contact">Contact us</a></li>
@@ -173,6 +235,6 @@
      </div>
     </div>
     </footer>
-
+    <script src="../main/script.js"></script>
 </body>
 </html>
